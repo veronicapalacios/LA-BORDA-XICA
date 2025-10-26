@@ -14,11 +14,11 @@ header {
     top:0;
     left:0;
     width: 100%;
-    padding:20px 40px;
+    padding:0;
     display:flex;
     background: transparent;
     z-index: 10;
-    color: white;
+    color:var(--crema);
     justify-content: space-between;
     align-items: center;
 }
@@ -88,7 +88,8 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 150vh;
+    padding: 100px 0 10px 0;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,17 +101,69 @@ header {
     position: relative;
     z-index: 2;
 }
-
-
-.apartado div h1 { 
-    color: var(--titulorojo);
-    font-family: var(--fuente-titulo);
-    font-size: 42px;
-    text-align: center;
+.apartadohead {
+    color:var(--crema);
+    font-family: var(--fuente-texto);
+    font-size: 1.7em;
+    padding: 20% 20%;
+    padding-top: 20%;
+    padding-bottom: 0%;
 }
-.apartado div p {
+.paginassub {
+    padding-top: 7%;
+    padding-bottom: 8%;
+}
+
+.paginassub a{
+    color:var(--crema);
+    font-family: var(--fuente-texto);
+    font-size: 1.2em;
+}
+
+.contenedoriconos {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+.icono {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    color: var(--dorado);
+    font-family: var(--fuente-texto);
+    font-size: 1.2rem;
+}
+.icono i {
+    font-size: 2rem;
+    color: var(--dorado);
+    border: 2px solid var(--dorado);
+    border-radius: 50%;
+    padding:20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--crema);
+}
+.apartado {
+    margin: 0% 3% 0% 3%;
+    padding: 0 15% 1.5% 15%;
+}
+.apartado h1 {
+        color: var(--titulorojo);
+        font-family: var(--fuente-titulo);
+        font-size: 42px;
+        text-align: center;
+        }
+.apartado p {
     color:  var(--textogris);
     font-family: var(--fuente-texto);
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
-}
+    }
