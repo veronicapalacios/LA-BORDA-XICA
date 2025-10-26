@@ -7,7 +7,7 @@
     --fuente-titulo:'Playfair Display';
     --fuente-texto: 'lato';
     --dorado: #C7A36F; 
-    }
+}
 
 header {
     position:absolute;
@@ -22,8 +22,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     flex: 0 0 25%;
+
 }
 .logo img {
     max-width: 100%;
@@ -40,8 +42,8 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
-    
 }
+
 .menuprincipal li {
     flex: 1;
     text-align: center;
@@ -51,7 +53,7 @@ header {
     font-family: var(--fuente-texto);
     text-decoration: none;
     text-transform: uppercase;
-    padding: 8px 12px;    
+    padding: 8px 12px;
 }
 .menuprincipal a:hover {
     font-size: large;
@@ -148,22 +150,99 @@ header {
     height: 40px;
     box-sizing: border-box;
 }
-body {
+main {
     background-color: var(--crema);
 }
+
 .apartado {
     margin: 0% 3% 0% 3%;
     padding: 0 15% 1.5% 15%;
 }
-.apartado h1 {
-        color: var(--titulorojo);
-        font-family: var(--fuente-titulo);
-        font-size: 42px;
-        text-align: center;
-        }
+.apartado h1 {    
+    color: var(--titulorojo);
+    font-family: var(--fuente-titulo);
+    font-size: 42px;
+    text-align: center;
+}
 .apartado p {
     color:  var(--textogris);
     font-family: var(--fuente-texto);
     font-size: 1.2rem;
     text-align: center;
     }
+.boton a{
+    text-decoration: none;
+    color: var(--titulorojo);
+    font-family: var(--fuente-titulo);
+    padding: 20px;
+    border-color: var(--titulorojo);
+    border-radius: 5px;
+    background-color: var(--dorado);
+    padding:10px 15px
+
+}
+.boton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.boton:hover{
+    filter: brightness(0.95);
+}
+.imagenesmenu {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap:20px;
+}
+.imagenesmenu img {
+    flex: 0 0 22%;
+    max-width: 22%;
+    height: auto;
+    display:block;
+    object-fit: cover;
+    border-radius: 8px 8px 8px 8px;
+    margin-bottom: 2%;
+}
+
+.apartado2{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    background-color: var(--marron);
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 0% 0% 0% 0%;
+    padding: 1.5% 15% 1.5% 10%;
+}
+.apartado2 h1 {    
+    color: var(--dorado);
+    font-family: var(--fuente-titulo);
+    font-size: 42px;
+    text-align: center;
+}
+.apartado2 p {
+    color:  var(--crema);
+    font-family: var(--fuente-texto);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.textoapartado2 {
+    margin-top: 5%;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+.imagenesinteriorexterior {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+}
+.imagenesinteriorexterior img {
+    flex: 1;
+    max-width: 65%;
+    height: auto;
+    display:block;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1% 1%;
+}
