@@ -1,0 +1,116 @@
+
+:root {
+    --marron: #4B3B2A;
+    --crema: #F5F0E6;
+    --titulorojo: #7A2E2E;
+    --textogris: #2B2B2B;
+    --fuente-titulo:'Playfair Display';
+    --fuente-texto: 'lato';
+    --dorado: #C7A36F; 
+    }
+
+header {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:20px 40px;
+    display:flex;
+    background: transparent;
+    z-index: 10;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    flex: 0 0 25%;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.menuprincipal {
+    flex: 0 0 50%;
+}
+
+.menuprincipal ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.menuprincipal li {
+    flex: 1;
+    text-align: center;
+}
+.menuprincipal a {
+    color: var(--crema);
+    font-family: var(--fuente-texto);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 12px;    
+}
+.menuprincipal a:hover {
+    font-size: large;
+}
+
+.menuindex  .menucarta .menuconocenos .menureserva {
+    float: none !important;
+    width: auto !important;
+}
+.menureserva {
+    display: none;
+}
+.cta {
+    flex: 0 0 auto;
+    text-decoration: none;
+    color: var(--titulorojo);
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: var(--titulorojo);
+    background-color: var(--dorado);
+    padding: 10px 15px;
+    margin-right: 10%;
+    margin-left: auto;
+    display: inline-block;
+
+}
+
+.cta:hover {
+    font-size: large;
+}
+
+#hero {
+    background-image: url(INTERIORSH.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: var(--marron);
+    text-align: center;
+}
+#hero section {
+    position: relative;
+    z-index: 2;
+}
+
+
+.apartado div h1 { 
+    color: var(--titulorojo);
+    font-family: var(--fuente-titulo);
+    font-size: 42px;
+    text-align: center;
+}
+.apartado div p {
+    color:  var(--textogris);
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    text-align: center;
+}
