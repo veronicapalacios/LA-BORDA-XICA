@@ -250,6 +250,7 @@ main {
 #reseñas {
     background-color: var(--marron);
     padding:1%;
+    height: 350px;
 }
 
 #reseñas h1 {
