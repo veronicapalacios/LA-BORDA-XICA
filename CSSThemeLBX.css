@@ -201,9 +201,6 @@ main {
     justify-content: center;
     margin-bottom: 2%;
 }
-.boton:hover{
-    filter: brightness(0.95);
-}
 .imagenesmenu {
     display: flex;
     justify-content: center;
@@ -224,10 +221,12 @@ main {
 .apartado2{
     display: flex;
     justify-content:space-between;
+    align-items: flex-start; /**/
     background-color: var(--marron);
     height: auto;
     gap: 40px;
     flex-wrap: wrap;
+
 }
 .apartado2 h1 {    
     color: var(--dorado);
@@ -249,6 +248,7 @@ main {
 .imagenesinteriorexterior {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .imagenesinteriorexterior img {
     flex: 1;
@@ -409,8 +409,6 @@ main {
     padding-bottom: 3%;
 }
 .contenedorpaginareserva {
-    margin: 0% 3% 0% 3%;
-    padding: 0 15% 1.5% 15%;
     background-color: var(--crema);
 }
 .contenedorpaginareserva h1 {    
@@ -536,6 +534,13 @@ aparezca la ubicacion en el footer (predeterminado)*/
         overflow-x: hidden;
         width: 100%;
     }
+    header {
+        display: flex;
+        align-items: center;
+    }
+    .menuprincipal{
+        flex:1;
+    }
 
     .header1 {
         font-size: small;
@@ -626,10 +631,6 @@ aparezca la ubicacion en el footer (predeterminado)*/
     .imagenesinteriorexterior {
         width: 100vw;
         display:flex;
-        gap: 0;
-        margin: 0;
-        padding: 0;
-        padding-left: 5%;
         padding-bottom: 2%;
     }
     .imagenesinteriorexterior img{
@@ -637,7 +638,7 @@ aparezca la ubicacion en el footer (predeterminado)*/
         flex:1;
         display: block;
         height: auto;
-        border-radius: 7px;
+        border-radius: 3px;
         align-items: flex-start;
         gap:0;
     }
@@ -663,7 +664,7 @@ aparezca la ubicacion en el footer (predeterminado)*/
         text-align: center;
     }
     .boton {
-        padding-top: 2.5%;
+        padding-top: 3%;
     }
 
     #ubicacion-mobil {  
@@ -673,8 +674,77 @@ aparezca la ubicacion en el footer (predeterminado)*/
         display:none;
     }
     
+    /*PAGINA CONOCENOS*/
+    .contenedorpaginaconocenos {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5%;
+    }
+    .textopaginaconocenos {
+        padding:5% 5%;
+    }
+    .textopaginaconocenos h1{
+        padding-bottom: 8%;
+        padding-top: 15%;
+        font-size: 7vw;
+        text-decoration: underline;
+    }
+    .textopaginaconocenos p{
+        font-size: 4vw;
+    }
 
-}
+    .imagenpaginaconocenos {
+        width: 100%;
+        padding-top: 3%;
+        display: flex;
+        gap:1px;
+        
+    }
+    .imagenpaginaconocenos img{
+        flex: 1;
+        height: auto;
+        display:block;
+        max-width: 33%;
+        border-radius: 0;
+    }
+    
+    /*PAGINA RESERVA*/
+    ..contenedorpaginareserva {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5%;
+    }
+    .textopaginareserva {
+        padding:5% 5%;
+    }
+    .textopaginareserva h1{
+        padding-bottom: 8%;
+        padding-top: 15%;
+        font-size: 7vw;
+        text-decoration: underline;
+    }
+    .textopaginareserva p{
+        font-size: 4vw;
+    }
+
+    .imagenpaginareserva {
+        width: 100%;
+        padding-top: 3%;
+        display: flex;
+        gap:1px;
+        
+    }
+    .imagenpaginareserva img{
+        flex: 1;
+        height: auto;
+        display:block;
+        max-width: 33%;
+        border-radius: 0;
+    }
+    .imagenpaginareserva *:last-child{
+        display:none;
+    }
+    
 
 @media (min-width: 769px) {
     .imagenesinteriorexterior {
@@ -685,4 +755,14 @@ aparezca la ubicacion en el footer (predeterminado)*/
     margin: 0% 0% 0% 0%;
     padding: 1.5% 15% 1.5% 10%;
     }
+    .contenedorpaginareserva {
+    margin: 0% 3% 0% 3%;
+    padding: 0 15% 1.5% 15%;
+    background-color: var(--crema);
+    }
+
+}
+
+}
+    
 }
