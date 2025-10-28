@@ -527,6 +527,7 @@ main {
     border-radius: 8px 8px 8px 8px;
     margin-bottom: 2%;
 }
+
 /*RESPONSIVE*/
 
 /*la idea es que en el mobil aparezca la ubicacion 
@@ -534,10 +535,57 @@ antes del footes y en dispositivos más grandes
 aparezca la ubicacion en el footer (predeterminado)*/
 
 @media (max-width:768px){
+
+    *,
+    *::before,
+    *::after{ box-sizing:border-box; }
+
+    header {
+        font-size: small;
+        justify-content: center;
+        margin-left: 13px
+    }
+
+    .menuindex {
+        display: none;
+    }
+
+    .apartadohead {
+        padding-top: 45%;
+        font-size: 5vw;
+    }
+
+    .paginassub{
+        font-size: 3vw;
+        padding: 20%;
+    }
+    .contenedoriconos {
+        max-width: 768px;
+        gap: 10px
+    }
+
+    .icono {
+        font-size:2.5vw;
+    }
+
+    .icono i{
+        font-size: 4vw;
+        padding: 10px;
+    }
+
+    .contenedor-reseñas {
+        flex-direction: column;
+    }
+
+    .apartado {
+        margin: 0 0;
+    }
+
     #ubicacion-mobil {  
     display:block;
     }
     #ubicacion-footer {
         display:none;
     }
+    
 }
