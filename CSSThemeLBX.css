@@ -224,12 +224,10 @@ main {
 .apartado2{
     display: flex;
     justify-content:space-between;
-    align-items: flex-start;
     background-color: var(--marron);
+    height: auto;
     gap: 40px;
     flex-wrap: wrap;
-    margin: 0% 0% 0% 0%;
-    padding: 1.5% 15% 1.5% 10%;
 }
 .apartado2 h1 {    
     color: var(--dorado);
@@ -242,21 +240,19 @@ main {
     font-family: var(--fuente-texto);
     font-size: 1.2rem;
     line-height: 1.6;
+    text-align: center;
 }
 .textoapartado2 {
-    margin-top: 5%;
     flex: 0 0 30%;
-    max-width: 30%;
+    max-width: 100%;
 }
 .imagenesinteriorexterior {
-    flex: 0 0 50%;
-    max-width: 50%;
     display: flex;
     flex-wrap: wrap;
 }
 .imagenesinteriorexterior img {
     flex: 1;
-    max-width: 65%;
+    max-width: 45%;
     height: auto;
     display:block;
     object-fit: cover;
@@ -536,14 +532,21 @@ aparezca la ubicacion en el footer (predeterminado)*/
 
 @media (max-width:768px){
 
-    *,
-    *::before,
-    *::after{ box-sizing:border-box; }
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
 
-    header {
+    .header1 {
         font-size: small;
         justify-content: center;
-        margin-left: 13px
+        padding-left: 18px;
+    }
+    
+    .header2 {
+        font-size: small;
+        justify-content: center;
+        padding-left: 13px;
     }
 
     .menuindex {
@@ -557,10 +560,9 @@ aparezca la ubicacion en el footer (predeterminado)*/
 
     .paginassub{
         font-size: 3vw;
-        padding: 20%;
+        padding: 25%;
     }
     .contenedoriconos {
-        max-width: 768px;
         gap: 10px
     }
 
@@ -577,8 +579,91 @@ aparezca la ubicacion en el footer (predeterminado)*/
         flex-direction: column;
     }
 
+    .contenedorapartado {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
     .apartado {
-        margin: 0 0;
+        margin: 0;
+        padding: 2.5%;
+        font-size: small;
+    }
+    .imagenesmenu {
+        width: 100%;
+        padding-top: 3%;
+        display: flex;
+        gap:1px;
+        
+    }
+    .imagenesmenu *:last-child {
+        display:none;
+    }
+    .imagenesmenu img{
+        flex: 1;
+        height: auto;
+        display:block;
+        max-width: 33%;
+        border-radius: 0;
+    }
+    .apartado2 {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        border: 0;
+        margin: 0;
+    }
+    .textoapartado2 {
+        flex:1;
+        width: 100%;
+        font-size: small;
+        padding: 5%;
+        padding-bottom: 0;
+    }
+    .imagenesinteriorexterior {
+        width: 100vw;
+        display:flex;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        padding-left: 5%;
+        padding-bottom: 2%;
+    }
+    .imagenesinteriorexterior img{
+        width: 100%;
+        flex:1;
+        display: block;
+        height: auto;
+        border-radius: 7px;
+        align-items: flex-start;
+        gap:0;
+    }
+    .boton {
+        padding-bottom: 3%;
+    }
+    #reseñas {
+        padding-bottom: 0%;
+    }
+    #reseñas h1{
+        font-size: 6vw;
+    }
+    .reseña {
+        font-size: 2.5vw;
+        padding-left: 9%;
+        padding-right: 12%;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    .texto {
+        padding-left: 5%;
+        font-size: 4vw;
+        text-align: center;
+    }
+    .boton {
+        padding-top: 2.5%;
     }
 
     #ubicacion-mobil {  
@@ -588,4 +673,16 @@ aparezca la ubicacion en el footer (predeterminado)*/
         display:none;
     }
     
+
+}
+
+@media (min-width: 769px) {
+    .imagenesinteriorexterior {
+    flex: 0 0 50%;
+    max-width: 50%;
+    }
+    .apartado2 {
+    margin: 0% 0% 0% 0%;
+    padding: 1.5% 15% 1.5% 10%;
+    }
 }
