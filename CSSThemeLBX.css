@@ -1,3 +1,4 @@
+/*========== PALETA DE COLORES Y FUENTES DEFINIDAS ===========*/
 
 :root {
     --marron: #4B3B2A;
@@ -8,7 +9,7 @@
     --fuente-texto: 'lato';
     --dorado: #C7A36F; 
 }
-
+/*========== MARGENES ===========*/
 html {
     box-sizing: border-box;
 }
@@ -21,6 +22,7 @@ html, body {
     padding: 0;
 }
 
+/*========== HEADER DE LA PAGINA ===========*/
 header {
     position:absolute;
     top:0;
@@ -100,6 +102,7 @@ header {
     color: var(--dorado);
 }
 
+/*========== PAGINA 1: INICIO  ===========*/
 #hero {
     background-image: url(INTERIORSH.jpg);
     background-size: cover;
@@ -124,9 +127,9 @@ header {
     font-size: 1.7em;
     padding: 20% 20%;
     padding-top: 20%;
-    padding-bottom: 0%;
+    padding-bottom: 6%;
 }
-
+/*========== ICONOS ===========*/
 .paginassub {
     padding-top: 7%;
     padding-bottom: 8%;
@@ -143,6 +146,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 65px;
+    padding-bottom: 1%;
 }
 .icono {
     display: flex;
@@ -173,22 +177,24 @@ header {
 main {
     background-color: var(--crema);
 }
-
+/*========== SECCION 1 Y 2: CARTA Y RESTAURANTE ===========*/
 .apartado {
     margin: 0% 3% 0% 3%;
-    padding: 0 15% 1.5% 15%;
+    padding: 3% 15% 1.5% 15%;
 }
 .apartado h1 {    
     color: var(--titulorojo);
     font-family: var(--fuente-titulo);
     font-size: 42px;
     text-align: center;
+    padding-bottom: 1%;
 }
 .apartado p {
     color:  var(--textogris);
     font-family: var(--fuente-texto);
     font-size: 1.2rem;
     text-align: center;
+    padding-top: 1% ;
     }
 .boton a{
     text-decoration: none;
@@ -206,6 +212,7 @@ main {
     justify-content: center;
     margin-bottom: 2%;
 }
+
 .imagenesmenu {
     display: flex;
     justify-content: center;
@@ -222,17 +229,19 @@ main {
     border-radius: 8px 8px 8px 8px;
     margin-bottom: 2%;
 }
-
+/*========= SECCIÓN2: INTERIOR/EXTERIOR RESTAURANTE ===========*/
 .apartado2{
     display: flex;
     background-color: var(--marron);
     text-align: center;
     align-items: center;
 }
+
 .apartado2 h1 {    
     color: var(--dorado);
     font-family: var(--fuente-titulo);
     font-size: 42px;
+    padding-bottom: 4%;
 }
 .apartado2 p {
     color:  var(--crema);
@@ -258,17 +267,24 @@ main {
     border-radius: 8px;
     margin: 3% 0 ;
 }
+/*========== RESEÑAS DE TRIP ADVISOR ===========*/
 
 #reseñas {
-    background-color: var(--marron);
-    padding:2% 1%;
+    background: linear-gradient(
+        to bottom, 
+        var(--dorado) 0%, 
+        var(--crema) 60%, 
+        var(--marron) 100%);
+    padding:2% 0% 1% 0;
     height: auto;
 }
 
 #reseñas h1 {
-    color: var(--crema);
+    color: var(--titulorojo);
     text-align: center;
     font-family: var(--fuente-titulo);
+    font-size: 2vw;
+    padding-bottom: 1%;
 }
 .contenedor-reseñas {
     display: flex;
@@ -278,14 +294,16 @@ main {
     margin: 1% 1%;
 
 }
-/*definir tamaños de reseñas segun y dispo */
+
 .reseña {
     border-radius: 8px;
     padding: 25px;
     border-color: var(--crema);
     background-color: var(--crema);
+    border: 2px solid var(--marron)
 }
 
+/*========== SECCIÓN MAPA PARA MOVILES ===========*/
 #ubicacion-mobil {
     display:none;
 }
@@ -304,6 +322,7 @@ main {
    display:block
 }
 
+/*========== FOOTER ===========*/
 .footer-content {
     width: 100%;
     max-width: 100%;
@@ -317,7 +336,6 @@ main {
     background-color: var(--textogris);
     padding: 2% 2% 2% 2%;
 }
-
 
 .footer-info {
     margin:0;
@@ -363,6 +381,7 @@ main {
 .social-icons a:hover i {
     color: var(--dorado)
 }
+/*========== UBICACION MAPA PARA TABLETS Y PCS ===========*/
 #ubicacion-footer {
     flex:1;
     display: flex;
@@ -379,8 +398,7 @@ main {
     border: none;
 }
 
-/*PAGINA RESERVAR*/
-
+/*========== PAGINA 3: RESERVAR ===========*/
 
 .header2 {
     position:relative;
@@ -398,18 +416,25 @@ main {
 .textopaginareserva h1 {
     margin-top: 0;
     padding-top:8%;
+    padding-bottom: 2%;
     line-height: 1;
 }
 .textopaginareserva p {
     line-height: 1.5;
+    padding: 5%;
 }
 .textopaginareserva *:last-child {
     padding-top: 1%;
     padding-bottom: 3%;
 }
 .contenedorpaginareserva {
-    background-color: var(--crema);
+    background: linear-gradient(
+        to bottom, 
+        var(--crema) 0%, 
+        var(--crema) 30%, 
+        var(--dorado) 100%);
 }
+
 .contenedorpaginareserva h1 {    
     color: var(--titulorojo);
     font-family: var(--fuente-titulo);
@@ -432,7 +457,6 @@ main {
     background-color: var(--dorado);
     padding:10px 15px;
     transition: all 0.3s ease;
-
 }
 .botonpaginareserva {
     display: flex;
@@ -447,6 +471,7 @@ main {
     background-color: var(--titulorojo);
     cursor:pointer;
 }
+
 .imagenpaginareserva {
     display: flex;
     justify-content: center;
@@ -464,21 +489,24 @@ main {
     margin-bottom: 2%;
 }
 
-/*PAGINA CONOCENOS*/
+/*========== PAGINA 2: CONOCENOS ===========*/
 
 .textopaginaconocenos h1 {
     margin-top: 0;
     padding-top:8%;
+    padding-bottom: 3%;
     line-height: 1;
 }
 .textopaginaconocenos p {
     line-height: 1.5;
+    padding-bottom: 4%;
 }
 
 .contenedorpaginaconocenos {
     margin: 0% 3% 0% 3%;
     padding: 0 15% 1.5% 15%;
     background-color: var(--crema);
+    
 }
 .contenedorpaginaconocenos h1 {    
     color: var(--titulorojo);
@@ -521,14 +549,14 @@ main {
     margin-bottom: 2%;
 }
 
-/*RESPONSIVE*/
+/*========== CSS RESPONSIVE ===========*/
 
 /*la idea es que en el mobil aparezca la ubicacion 
 antes del footes y en dispositivos más grandes 
 aparezca la ubicacion en el footer (predeterminado)*/
 
 @media (max-width:768px){
-
+    /*========== HEADER ===========*/
     html, body {
         overflow-x: hidden;
         width: 100%;
@@ -556,7 +584,7 @@ aparezca la ubicacion en el footer (predeterminado)*/
     .menuindex {
         display: none;
     }
-
+    /*========== PAGINA 1: INICIO ===========*/
     .apartadohead {
         padding-top: 45%;
         font-size: 5vw;
@@ -578,11 +606,8 @@ aparezca la ubicacion en el footer (predeterminado)*/
         font-size: 4vw;
         padding: 10px;
     }
-
-    .contenedor-reseñas {
-        flex-direction: column;
-    }
-
+    
+    /*========== RESPONSIVE SECCION 1 Y 3 ===========*/
     .contenedorapartado {
         margin: 0;
         padding: 0;
@@ -611,6 +636,7 @@ aparezca la ubicacion en el footer (predeterminado)*/
         max-width: 33%;
         border-radius: 0;
     }
+    /*========== RESPONSIVE SECCION 2 ===========*/
     .apartado2 {
         width: 100vw;
         display: flex;
@@ -648,6 +674,10 @@ aparezca la ubicacion en el footer (predeterminado)*/
     .boton {
         padding-bottom: 3%;
     }
+    /*========== RESPONSIVE RESEÑAS ===========*/
+    .contenedor-reseñas {
+        flex-direction: column;
+    }
     #reseñas {
         padding-bottom: 0%;
     }
@@ -677,7 +707,7 @@ aparezca la ubicacion en el footer (predeterminado)*/
         display:none;
     }
     
-    /*PAGINA CONOCENOS*/
+    /*========== RESPONSIVE SECCIÓN 3 ESPECIFICA ===========*/
     .contenedorpaginaconocenos {
         margin: 0;
         padding: 0;
@@ -711,7 +741,7 @@ aparezca la ubicacion en el footer (predeterminado)*/
         border-radius: 0;
     }
     
-    /*PAGINA RESERVA*/
+    /*========== RESPONSIVE PAGINA 3: RESERVAR ===========*/
     .contenedorpaginareserva {
         margin: 0;
         padding: 0;
@@ -749,12 +779,14 @@ aparezca la ubicacion en el footer (predeterminado)*/
     }
     
 
+        /*========== PARA DISPOSITIVOS TABLET O PCS ===========*/
 @media (min-width: 769px) {
    
     .contenedorpaginareserva {
-    margin: 0% 3% 0% 3%;
+    margin: 0% 5% 0% 5%;
     padding: 0 15% 1.5% 15%;
     background-color: var(--crema);
     }
+   
 
 }
