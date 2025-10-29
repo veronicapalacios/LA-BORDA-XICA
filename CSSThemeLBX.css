@@ -631,6 +631,8 @@ aparezca la ubicacion en el footer (predeterminado)*/
         width: 100vw;
         display:flex;
         gap:0px;
+        padding-bottom: 2%;
+        padding-top: 4%;
     }
     .imagenesinteriorexterior img{
         width: 46%;
@@ -640,6 +642,8 @@ aparezca la ubicacion en el footer (predeterminado)*/
         align-items: flex-start;
         margin-bottom: 0px;
         padding: 1px 1px 1px 1px;
+        border-radius: 0px;
+        
     }
     .boton {
         padding-bottom: 3%;
