@@ -747,11 +747,6 @@ aparezca la ubicacion en el footer (predeterminado)*/
         margin: 0;
         padding: 0;
         padding-bottom: 5%;
-        background: linear-gradient(
-        to bottom, 
-        var(--crema) 0%, 
-        var(--crema) 30%, 
-        var(--dorado) 100%);
     }
     
     .textopaginareserva {
