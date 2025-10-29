@@ -126,6 +126,7 @@ header {
     padding-top: 20%;
     padding-bottom: 0%;
 }
+
 .paginassub {
     padding-top: 7%;
     padding-bottom: 8%;
@@ -151,6 +152,10 @@ header {
     color: var(--dorado);
     font-family: var(--fuente-texto);
     font-size: 1.2rem;
+
+}
+.textoiconoshero {
+    text-shadow: 1px 2px 10px rgb(0, 0, 0)
 }
 .icono i {
     font-size: 2rem;
@@ -220,44 +225,38 @@ main {
 
 .apartado2{
     display: flex;
-    justify-content:space-between;
-    align-items: flex-start; /**/
     background-color: var(--marron);
-    height: auto;
-    gap: 40px;
-    flex-wrap: wrap;
-
+    text-align: center;
+    align-items: center;
 }
 .apartado2 h1 {    
     color: var(--dorado);
     font-family: var(--fuente-titulo);
     font-size: 42px;
-    text-align: center;
 }
 .apartado2 p {
     color:  var(--crema);
     font-family: var(--fuente-texto);
     font-size: 1.2rem;
     line-height: 1.6;
-    text-align: center;
 }
 .textoapartado2 {
-    flex: 0 0 30%;
-    max-width: 100%;
+    padding-left: 5%;
 }
 .imagenesinteriorexterior {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 25px;
 }
 .imagenesinteriorexterior img {
-    flex: 1;
-    max-width: 45%;
-    height: auto;
+    max-width: 100%;
+    width: 40%;
     display:block;
     object-fit: cover;
     border-radius: 8px;
-    margin: 0% 1%;
+    border-radius: 8px;
+    margin: 3% 0 ;
 }
 
 #reseñas {
@@ -631,16 +630,16 @@ aparezca la ubicacion en el footer (predeterminado)*/
     .imagenesinteriorexterior {
         width: 100vw;
         display:flex;
-        padding-bottom: 2%;
+        gap:0px;
     }
     .imagenesinteriorexterior img{
-        width: 100%;
+        width: 46%;
         flex:1;
         display: block;
         height: auto;
         border-radius: 3px;
         align-items: flex-start;
-        gap:0;
+        margin-bottom: 0px;
     }
     .boton {
         padding-bottom: 3%;
@@ -709,7 +708,7 @@ aparezca la ubicacion en el footer (predeterminado)*/
     }
     
     /*PAGINA RESERVA*/
-    ..contenedorpaginareserva {
+    .contenedorpaginareserva {
         margin: 0;
         padding: 0;
         padding-bottom: 5%;
@@ -747,22 +746,11 @@ aparezca la ubicacion en el footer (predeterminado)*/
     
 
 @media (min-width: 769px) {
-    .imagenesinteriorexterior {
-    flex: 0 0 50%;
-    max-width: 50%;
-    }
-    .apartado2 {
-    margin: 0% 0% 0% 0%;
-    padding: 1.5% 15% 1.5% 10%;
-    }
+   
     .contenedorpaginareserva {
     margin: 0% 3% 0% 3%;
     padding: 0 15% 1.5% 15%;
     background-color: var(--crema);
     }
 
-}
-
-}
-    
 }
