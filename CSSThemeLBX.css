@@ -637,9 +637,9 @@ aparezca la ubicacion en el footer (predeterminado)*/
         flex:1;
         display: block;
         height: auto;
-        border-radius: 3px;
         align-items: flex-start;
         margin-bottom: 0px;
+        padding: 1px 1px 1px 1px;
     }
     .boton {
         padding-bottom: 3%;
