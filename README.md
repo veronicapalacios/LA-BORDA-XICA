@@ -11,7 +11,6 @@ es decir esta adaptado a todos los dispositivos.
 # Instalación o uso 
 El repositoria esta disponible en: https://github.com/veronicapalacios/LA-BORDA-XICA
 O podemos ver el proyecto online en: https://veronicapalacios.github.io/LA-BORDA-XICA/
-Tecnologias utilizadas
 
 # Créditos 
 Las imagenes de este proyecto estan inspiradas en las imagenes de instagram @borda_xica,
