@@ -104,7 +104,7 @@ header {
 
 /*========== PAGINA 1: INICIO  ===========*/
 #hero {
-    background-image: url(INTERIORSH.jpg);
+    background-image: url(archivos/INTERIORSH.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
