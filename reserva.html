@@ -55,6 +55,28 @@ Te recomendamos realizar tu reserva con antelación, sobre todo durante fines de
                         Reservar vía Instagram
                     </a>
                 </div>
+                <section>
+                    <p>O si lo prefieres nos ponemos en contacto contigo </p>
+                    <form class= formularioreserva action="#" method="post">
+                        <fieldset>
+                            <legend>Consulta</legend>
+                            <label for="nombre apellido">Nombre</label>
+                            <input type="text" id="nombre apellido" placeholder="Nombre Apellido" required>
+                            <label for="numerotelefono">Contacto</label>
+                            <input type="text" id="numerotelefono" placeholder="XXX-XXX-XXX" required>
+                            <select name="Consulta" id="selectorconsulta">
+                                <option value="reservar">Reservar</option> 
+                                <option value="consultagastronomica">Consultas Gastronómicas</option>
+                                <option value="local">Local</option>
+                                <option value="ubicacion">Ubicación</option>
+                                <option value="otraconsulta">Otros</option>
+                            </select>
+                            <label for="Indicanos cuál es tu consulta"></label>
+                            <textarea name="mensaje" id="mensajeconsulta" rows="4" placeholder="Escribe aquí tu consulta o indicanos fecha de reserva y número de personas" required></textarea>
+                            <button type="button" name="enviar" onclick="alert('Tu consulta se ha enviado!')">Enviar</button>
+                        </fieldset>
+                    </form>
+                </section>
                 <div class="textopaginareserva">
                     <p>Queremos que disfrutes de una comida inolvidable en un entorno acogedor, con platos elaborados con ingredientes locales y llenos de sabor tradicional. <br>
                     ¡Estamos deseando darte la bienvenida y compartir contigo la esencia de La Borda Xica!</p>
