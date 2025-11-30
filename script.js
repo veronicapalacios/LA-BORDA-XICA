@@ -24,12 +24,13 @@ if (botonHamburguesa2 && menu2) {
 
 
 /*---------------FORMULARIO----------------*/
-const formulario = document.getElementById("formulario")
-
-if (formulario) {
-    formulario.addEventListener("submit", function(event) { 
-        event.preventDefault();
-        alert("¡Tu consulta se ha enviado!");
-        formulario.reset();
+document.addEventListener("DOMContentLoaded", function(){
+    const formulario = document.getElementById("formulario");
+    if (formulario) {
+        formulario.addEventListener("submit", function(event) { 
+            event.preventDefault();
+            alert("Consulta enviada ¡Gracias por tu mensaje!");
+            formulario.reset();
+        });
+    }
 });
-}
