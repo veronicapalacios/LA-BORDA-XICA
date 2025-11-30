@@ -470,6 +470,78 @@ main {
     cursor:pointer;
 }
 
+.contenedorformulario {
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-family: var(--fuente-texto);
+    
+}
+
+:placeholder-shown{
+    font-family: var(--fuente-texto);
+    
+}
+
+.campo {
+    margin: 3% 3% 3% 3%;
+    
+}
+
+.label-box {
+    min-width: 100%;
+    padding-left: 2%;   
+    border: 30px;
+    
+    
+}
+.input-box {
+    min-width: 100% ;
+    border: 1.5px solid var(--dorado);
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.08);
+    font-size: 16px;
+    font-family: var(--fuente-texto);
+}
+
+fieldset {
+    border: 25px solid var(--crema);
+    background-color: var(--crema) ;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(79, 48, 8);
+    margin: 0 28% 0% 28%;
+    
+}
+#selectorconsulta {
+    width: 100%;
+    text-align: center;
+    background-color: ;
+    border: 1.5px solid var(--dorado);
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    
+}
+
+.botonenviar {
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--dorado);
+    color: white;
+    border: 0px;
+    font-size: 16px;
+    
+}
+
+.botonenviar:hover{
+    color: var(--dorado);
+    border-color: var(--dorado);
+    background-color: var(--titulorojo);
+    cursor:pointer;
+}
+
 .imagenpaginareserva {
     display: flex;
     justify-content: center;
@@ -477,6 +549,7 @@ main {
     gap:20px;
     flex-wrap: wrap;
 }
+
 .imagenpaginareserva img {
     flex: 0 0 22%;
     max-width: 22%;

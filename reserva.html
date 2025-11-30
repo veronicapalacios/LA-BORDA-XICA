@@ -55,25 +55,35 @@ Te recomendamos realizar tu reserva con antelación, sobre todo durante fines de
                         Reservar vía Instagram
                     </a>
                 </div>
-                <section>
+                <section >
+                    <br>
                     <p>O si lo prefieres nos ponemos en contacto contigo </p>
-                    <form class= formularioreserva action="#" method="post">
-                        <fieldset>
-                            <legend>Consulta</legend>
-                            <label for="nombre apellido">Nombre</label>
-                            <input type="text" id="nombre apellido" placeholder="Nombre Apellido" required>
-                            <label for="numerotelefono">Contacto</label>
-                            <input type="text" id="numerotelefono" placeholder="XXX-XXX-XXX" required>
-                            <select name="Consulta" id="selectorconsulta">
-                                <option value="reservar">Reservar</option> 
-                                <option value="consultagastronomica">Consultas Gastronómicas</option>
-                                <option value="local">Local</option>
-                                <option value="ubicacion">Ubicación</option>
-                                <option value="otraconsulta">Otros</option>
-                            </select>
-                            <label for="Indicanos cuál es tu consulta"></label>
-                            <textarea name="mensaje" id="mensajeconsulta" rows="4" placeholder="Escribe aquí tu consulta o indicanos fecha de reserva y número de personas" required></textarea>
-                            <button type="button" name="enviar" onclick="alert('Tu consulta se ha enviado!')">Enviar</button>
+                    <form class="contenedorformulario" action="#" method="post">
+                        <fieldset >
+                            <div class="campo">
+                                <label class="label-box" for="nombre apellido">Nombre</label>
+                                <input class="input-box" type="text" id="nombre apellido" placeholder="" required>
+                            </div>
+                            <div class="campo">
+                                <label class="label-box" for="numerotelefono">Email o móvil</label>
+                                <input class="input-box" type="text" id="numerotelefono" placeholder="" required>
+                            </div>
+                            <div class="campo">
+                                <select name="Consulta" id="selectorconsulta">
+                                    <option class="desplegable" value="reserva">Reserva</option> 
+                                    <option class="desplegable" value="consultagastronomica">Consultas Gastronómicas</option>
+                                    <option class="desplegable" value="local">Local</option>
+                                    <option class="desplegable" value="ubicacion">Ubicación</option>
+                                    <option class="desplegable" value="otraconsulta">Otros</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label for="Indicanos cuál es tu consulta"></label>
+                                <textarea class="input-box" name="mensaje" rows="4" placeholder="Escribe aquí tu consulta o indicanos fecha de reserva y número de personas" required></textarea>
+                            </div>
+                            <div class="campo">
+                                <button class="botonenviar" type="submit" name="enviar">Enviar</button>
+                            </div>
                         </fieldset>
                     </form>
                 </section>
